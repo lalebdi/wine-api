@@ -17,7 +17,7 @@ function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/">WineAPI</Link>
             </li>
             <li>
               <Link to="/about">About</Link>
@@ -31,8 +31,8 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/" component={WineAPI}>
+          <WineAPI /> 
           </Route>
           <Route path="/users">
             <Users />
@@ -51,4 +51,3 @@ function App() {
 export default App;
 
 
-{/* <WineAPI /> */}
